@@ -31,6 +31,8 @@ const numJewelsInStones = (j,s) => {
   })
 
   console.log(newArr);
+
+  return newArr.length
 }
 
 
