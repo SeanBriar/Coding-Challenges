@@ -9,5 +9,29 @@ let j = "aA"
 let s = "aAAbbb"
 
 const numJewelsInStones = (j,s) => {
-  
+  let newArr = []
+  let arr1 = j.split("")
+  // console.log(arr1)
+  let arr2 = s.split("")
+  // console.log(arr2);
+
+//   for (let i = 0; i > arr2.length; i++) {
+//         newArr.push(arr2[i])
+//         console.log(newArr);
+//     }
+//
+//   return newArr
+
+  arr1.forEach((a)=>{
+    arr2.forEach((b)=> {
+      if (a === b) {
+        newArr.push(b)
+      }
+    })
+  })
+
+  console.log(newArr);
 }
+
+
+numJewelsInStones(j,s)
