@@ -8,7 +8,6 @@ const sortedSquares = (array)=>{
     // console.log(a);
     newArr.push(s)
     newArr.sort((a, b) =>  a - b)
-    return newArr;
   })
 
   // console.log(newArr);
