@@ -1,0 +1,20 @@
+// For a non-negative integer X, the array-form of X is an array of its digits in left to right order.  For example, if X = 1231, then the array form is [1,2,3,1].
+
+// Given the array-form A of a non-negative integer X, return the array-form of the integer X+K.
+
+let A = [1,2,0,0]
+let K = 34
+
+const addToArrayForm = (A, K) => {
+  const getsum = total, num =>{
+    return total + num
+  }
+
+  A.reduce(getsum())
+
+
+  console.log(A);
+  console.log(K);
+}
+
+addToArrayForm(A, K)

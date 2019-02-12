@@ -1,0 +1,56 @@
+let garden = [3, 1, 0, 5, 8, 0, 9]
+
+
+const hungryRabbit = garden => {
+  // find the middle of the array
+  let a = garden.length / 2
+  // console.log("length divided in half = " + a);
+  let middle = garden[3]
+
+  // console.log("middle = " + middle);
+  //rabbit starts at 5, index 3 of array
+
+  //the rabbit has to check either side of index 3, compare the two, and choose which is larger.
+
+  //
+  // for (let i = 0; i > garden.length; i++) {
+  //   if (garden[i] === (garden[3] + 1)) {
+  //     right.push(i)
+  //   } else if (garden[i] === garden[3] - 1)
+  //     left = i
+  // }
+  // console.log(right);
+  // console.log(left);
+
+
+  //assign values of both indecies to variables
+  let right = garden[3 + 1]
+  let left = garden[3 - 1]
+
+  console.log(right);
+  console.log(left);
+
+  //now compare the two
+  if (left < right) {
+    //assign to new variable
+    let newRight = middle + right
+    console.log(newRight);
+  } else if (left >= right) {
+    //assign to new variable
+    let newLeft = middle + left
+    console.log(newLeft);
+  }
+
+    // there needs to be a way for the code to be dynamic. the 'middle' isn't always going to be at index of 3.
+    // the rabbit would go to the next square and eat that carrot, and then there would be a new 'middle', and the process would need to start all over again.
+    // I would need to tweak the way I am getting the 'middle' variable
+    // perhaps...
+
+    let middle2 = garden[garden.length / 2]
+    console.log(middle2);
+
+    //....but I've run out of time. :(
+
+  }
+
+hungryRabbit(garden)
