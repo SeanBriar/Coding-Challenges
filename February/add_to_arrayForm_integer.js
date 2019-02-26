@@ -6,7 +6,7 @@ let A = [1,2,0,0]
 let K = 34
 
 const addToArrayForm = (A, K) => {
-  const getsum = total, num =>{
+  const getsum = total, num => {
     return total + num
   }
 
